@@ -4,7 +4,7 @@ jobs:
   phpunit:
     runs-on: ubuntu-latest
     container:
-      image: juampynr/drupal8ci:latest
+      image: juampynr/drupal9ci:latest
 
     services:
       mariadb:
@@ -32,7 +32,7 @@ jobs:
   code-standards:
     runs-on: ubuntu-latest
     container:
-      image: juampynr/drupal8ci:latest
+      image: juampynr/drupal9ci:latest
 
     steps:
       - uses: actions/checkout@v1
@@ -51,7 +51,7 @@ jobs:
   code-coverage:
     runs-on: ubuntu-latest
     container:
-      image: juampynr/drupal8ci:latest
+      image: juampynr/drupal9ci:latest
 
     services:
       mariadb:
@@ -85,7 +85,7 @@ jobs:
   behat:
     runs-on: ubuntu-latest
     container:
-      image: juampynr/drupal8ci:latest
+      image: juampynr/drupal9ci:latest
     services:
       mariadb:
         image: mariadb:latest
@@ -115,7 +115,7 @@ jobs:
   cypress:
     runs-on: ubuntu-latest
     container:
-      image: juampynr/drupal8ci:latest
+      image: juampynr/drupal9ci:latest
     services:
       mariadb:
         image: mariadb:latest
