@@ -1,0 +1,5 @@
+name: Demo module
+type: module
+description: Demo module used for demonstrating CircleCI integration.
+package: Custom
+core_version_requirement: ^8.8 || ^9 || ^10
